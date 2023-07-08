@@ -1,5 +1,7 @@
 # TypeScript
 
+A comprehensive analysis on whether TypeScript enums are good or bad... What are the alternatives that we can use? What are the considerations that we should take into account?
+
 ## Alternatives
 
 - Enums
