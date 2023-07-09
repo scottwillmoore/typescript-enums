@@ -93,3 +93,62 @@
 
 	type Suit = (typeof suits)[keyof typeof suits];
 }
+
+{
+	type Club = 0;
+	type Diamond = 1;
+	type Heart = 2;
+	type Spade = 3;
+
+	type Suit = Club | Diamond | Heart | Spade;
+}
+
+{
+	// @ts-ignore
+	declare const type: unique symbol;
+	type NewType<T, Type> = T & { [type]: Type };
+
+	// @ts-ignore
+	declare const suitType: unique symbol;
+	type SuitType = typeof suitType;
+
+	type Club = NewType<0, SuitType>;
+	type Diamond = NewType<1, SuitType>;
+	type Heart = NewType<2, SuitType>;
+	type Spade = NewType<3, SuitType>;
+
+	type Suit = Club | Diamond | Heart | Spade;
+}
+
+{
+	// @ts-ignore
+	declare const suitType: unique symbol;
+	type SuitType<T> = T & { [suitType]: never };
+
+	type Club = SuitType<0>;
+	type Diamond = SuitType<1>;
+	type Heart = SuitType<2>;
+	type Spade = SuitType<3>;
+
+	type Suit = Club | Diamond | Heart | Spade;
+}
+
+// Question: Are number literals more performant than string literals?
+
+// Question: Are number literals produce smaller bundle sizes than string literals?
+
+// Question: What examples produce types that can be checked for exhaustiveness?
+// Question: What examples produce types that can be narrowed?
+
+// Question: What examples can be easily iterated?
+
+// Question: What examples can be easily refactored?
+// Question: What examples can be easily renamed?
+
+// Question: What examples have type safety?
+// Question: What examples have nominal type safety?
+
+// Question: What examples produce the best documentation?
+// Question: What examples produce the best IntelliSense?
+
+// Question: What examples work with `isolatedModules` enabled?
