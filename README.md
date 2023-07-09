@@ -50,6 +50,17 @@ A comprehensive analysis on whether TypeScript enums are good or bad... What are
 - https://medium.com/@KevinBGreene/surviving-the-typescript-ecosystem-branding-and-type-tagging-6cf6e516523d
 - https://basarat.gitbook.io/typescript/main-1/nominaltyping
 
+### Reference management
+
+- https://www.zotero.org/
+- https://libguides.navitas.com/reference-management/comparison
+- https://www.mendeley.com/reference-management/reference-manager
+- https://endnote.com/
+- https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax
+- https://github.blog/2021-08-19-enhanced-support-citations-github/
+- https://github.com/JabRef/jabref
+- https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html
+
 ### Type aliases
 
 - https://github.com/microsoft/TypeScript/issues/35654
