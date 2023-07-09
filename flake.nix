@@ -31,6 +31,8 @@
       perSystem = {packages, ...}: {
         devShells.default = packages.mkShell {
           nativeBuildInputs = with packages; [
+            alejandra
+            nil
             pandoc
           ];
         };
